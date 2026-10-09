@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "personal-apd"
+version = "0.1.0"
+description = "Personal multi-agent software development framework (APD-style): planner, builder, and a 3-reviewer evaluation loop over MCP-style file tools."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "anthropic>=0.39.0",
+]
+
+[project.scripts]
+apd = "apd.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["apd*"]
