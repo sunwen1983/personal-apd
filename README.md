@@ -2,6 +2,8 @@
 
 A small, working multi-agent software-development framework in Python — my personal reimplementation of the APD-style (Autonomous Product Developer) loop I built at GM. No proprietary code; written from scratch.
 
+> **Scope note:** this is a deliberately small version — the planner/builder/reviewer core with file tools. The production system this is modeled on is considerably broader: it drives the full lifecycle from Jira story to merged PR to closed story (planning, implementation, code review, PR creation, CI), with a deeper review and evaluation system on top.
+
 The loop:
 
 ```
